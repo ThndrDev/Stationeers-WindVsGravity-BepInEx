@@ -1,10 +1,10 @@
 # Stationeers mod "Wind Vs Gravity" for BepInEx.
 
 # Description:  
-On Stationeers Vanilla, the wind forces that happens when there's a subitle pressure difference doesn't take into account the planet gravity. The distance you or your stuff get pulled and tossed around is the same, no matter how strong or weak gravity.
-This makes simple things like mining being an nightmare on custom planets with extreme pressure atmospheres like GJ 229 Ac https://steamcommunity.com/sharedfiles/filedetails/?id=2642867922.
+On Vanilla Stationeers, the wind forces that happen when there's a subtle pressure difference don't take into account the planet's gravity. The distance you or your stuff get pulled and tossed around is the same, no matter how strong or weak gravity is.
+This makes mining a nightmare on custom planets with extreme pressure atmospheres like GJ 229 Ac.
 
-This mod changes the forces created by huge pressure differences to also take into account the local gravity. On mars, with it's weak 3.8m/s gravity, the effect will be almost the same that of Vanilla, but at stronger gravity, things will be more heavier and the wind will have less of an effect on it.
+This mod changes the forces created by pressure differences to also take into account the local gravity. On mars, with its weak 3.8m/s gravity, the effect will be almost the same that of Vanilla, but at bodies with stronger gravity, things will be heavier and the wind will have less of an effect on it.
 
 But beware, if you're flying on jetpack, the wind will still have a strong pull on you.
 
