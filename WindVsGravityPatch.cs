@@ -4,7 +4,7 @@ using JetBrains.Annotations;
 using UnityEngine;
 using Assets.Scripts.Objects;
 using Assets.Scripts.Objects.Items;
-
+using Assets.Scripts.Objects.Entities;
 
 namespace WindVsGravity.Scripts
 {
@@ -35,17 +35,22 @@ namespace WindVsGravity.Scripts
         [UsedImplicitly]
         static private void JetpackPatch(Jetpack __instance)
         {
-            if (__instance.ParentHuman != null)
+            Human parentHuman = null;
+            var parentHumanProperty = AccessTools.Property(typeof(Backpack), "ParentHuman");
+            parentHuman = parentHumanProperty.GetValue(__instance, null) as Human;
+
+            if (parentHuman != null)
             {
                 if (__instance.JetPackActivate)
                 {
-                    __instance.ParentHuman.AtmosphereDampeningScale = 0.5f;
+                    parentHuman.AtmosphereDampeningScale = 0.5f;
                 }
                 else
                 {
-                    __instance.ParentHuman.AtmosphereDampeningScale = Mathf.Clamp(0.5f + (WorldManager.CurrentWorldSetting.Gravity / 100), 0.2f, 0.5f);
+                    parentHuman.AtmosphereDampeningScale = Mathf.Clamp(0.5f + (WorldManager.CurrentWorldSetting.Gravity / 100), 0.2f, 0.5f);
                 }
             }
         }
     }
 }
+

@@ -6,3 +6,8 @@ bin/Debug/*
 .vs/Stationeers-PlantsnNutritionRebalance-BepInEx/v16/.suo
 *.dll
 *.zip
+.vs/WindVsGravity/v17/.suo
+*.lock
+*.vsidx
+*.v2
+*.1

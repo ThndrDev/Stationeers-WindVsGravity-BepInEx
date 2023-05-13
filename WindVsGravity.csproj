@@ -31,6 +31,10 @@
  
   </ItemGroup>
 
+	<Target Name="PostBuild" AfterTargets="PostBuildEvent">
+		<Exec Command="xcopy /Y /F &quot;$(TargetPath)&quot; &quot;G:\SteamLibrary\steamapps\common\Stationeers\BepInEx\plugins&quot;" />
+	</Target>
+
   <PropertyGroup>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
