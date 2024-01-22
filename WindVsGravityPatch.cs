@@ -18,11 +18,11 @@ namespace WindVsGravity.Scripts
         {
             if (__instance is Entity)
             {
-                __instance.AtmosphereDampeningScale = Mathf.Clamp(0.5f + (WorldManager.CurrentWorldSetting.Gravity / 100), 0.2f, 0.5f);
+                __instance.AtmosphereDampeningScale = Mathf.Clamp(0.5f + (WorldSetting.Current.Gravity / 100), 0.2f, 0.5f);
             }
             else
             {
-            __instance.AtmosphereDampeningScale = Mathf.Clamp(__instance.AtmosphereDampeningScale + (WorldManager.CurrentWorldSetting.Gravity / 60), 0.3f, 1f);
+            __instance.AtmosphereDampeningScale = Mathf.Clamp(__instance.AtmosphereDampeningScale + (WorldSetting.Current.Gravity / 60), 0.3f, 1f);
             }
         }
     }
@@ -47,7 +47,7 @@ namespace WindVsGravity.Scripts
                 }
                 else
                 {
-                    parentHuman.AtmosphereDampeningScale = Mathf.Clamp(0.5f + (WorldManager.CurrentWorldSetting.Gravity / 100), 0.2f, 0.5f);
+                    parentHuman.AtmosphereDampeningScale = Mathf.Clamp(0.5f + (WorldSetting.Current.Gravity / 100), 0.2f, 0.5f);
                 }
             }
         }

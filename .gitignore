@@ -11,3 +11,6 @@ bin/Debug/*
 *.vsidx
 *.v2
 *.1
+*.sln
+Properties/launchSettings.json
+WindVsGravity.csproj.user
