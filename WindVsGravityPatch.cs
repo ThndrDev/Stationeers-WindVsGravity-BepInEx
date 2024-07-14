@@ -16,13 +16,18 @@ namespace WindVsGravity.Scripts
         [UsedImplicitly]
         static private void AtmosphereDampeningScalePatch(DynamicThing __instance)
         {
+            if (__instance == null || WorldSetting.Current == null)
+            {
+                return;
+            }
+
             if (__instance is Entity)
             {
                 __instance.AtmosphereDampeningScale = Mathf.Clamp(0.5f + (WorldSetting.Current.Gravity / 100), 0.2f, 0.5f);
             }
             else
             {
-            __instance.AtmosphereDampeningScale = Mathf.Clamp(__instance.AtmosphereDampeningScale + (WorldSetting.Current.Gravity / 60), 0.3f, 1f);
+                __instance.AtmosphereDampeningScale = Mathf.Clamp(__instance.AtmosphereDampeningScale + (WorldSetting.Current.Gravity / 60), 0.3f, 1f);
             }
         }
     }

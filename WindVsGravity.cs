@@ -5,7 +5,7 @@ using UnityEngine;
 
 namespace WindVsGravity.Scripts
 {
-    [BepInPlugin("net.ThndrDev.stationeers.WindVsGravity.Scripts", "Wind Vs Gravity", "0.1.2.0")]   
+    [BepInPlugin("net.ThndrDev.stationeers.WindVsGravity.Scripts", "Wind Vs Gravity", "0.1.3.0")]   
     public class WindVsGravityPlugin : BaseUnityPlugin
     {
         public static WindVsGravityPlugin Instance;

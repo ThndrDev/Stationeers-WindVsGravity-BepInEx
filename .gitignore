@@ -14,3 +14,7 @@ bin/Debug/*
 *.sln
 Properties/launchSettings.json
 WindVsGravity.csproj.user
+.vs/ProjectEvaluation/windvsgravity.metadata.v8.bin
+.vs/ProjectEvaluation/windvsgravity.projects.v8.bin
+/.vs/ProjectEvaluation
+/.vs
