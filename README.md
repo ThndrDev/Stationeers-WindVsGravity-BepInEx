@@ -8,8 +8,6 @@ This mod changes the forces created by pressure differences to also take into ac
 
 But beware, if you're flying on jetpack, the wind will still have a strong pull on you.
 
-Note that, if you use Windows, you don't need this. On Windows, just use the Stationeers.Addons and you'll get mod updates automatically through steam. This port is just for the people who want to run the mod in any OS that are not supported by Stationeers.Addons.
-
 # Instructions
 
 * If you don't have BepInEx installed, download the lastest 5.x  64 bit version available at https://github.com/BepInEx/BepInEx/releases and follow the BepInEx installation instructions but basically you will need to:
