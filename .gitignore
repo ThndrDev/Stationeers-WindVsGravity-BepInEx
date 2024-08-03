@@ -1,6 +1,7 @@
 obj/*
 externals/*
 bin/Debug/*
+Properties/*
 /.vs
 *.dll
 *.zip
@@ -8,6 +9,4 @@ bin/Debug/*
 *.vsidx
 *.v2
 *.1
-*.sln
-Properties/*
 *.user
